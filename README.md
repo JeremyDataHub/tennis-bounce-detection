@@ -45,6 +45,7 @@ This project explores whether two synchronized consumer cameras can provide suff
 
 ## ⚙️ System Pipeline
 
+```
 Camera 1 (4K 60fps)  ──┐
                         ├──▶ Synchronization ──▶ Camera Calibration
 Camera 2 (4K 60fps)  ──┘                              │
@@ -62,6 +63,7 @@ Camera 2 (4K 60fps)  ──┘                              │
                               (Side-by-side: acquisition + top-down view)
 
 
+```
 
 ## 🛠️ Methodology
 
