@@ -142,13 +142,6 @@ This system was developed as part of a Master's thesis:
 - **Synergy Tennis**, Colombo, Sri Lanka — for hosting the internship and providing the court and players for data collection.
 - **Renouk Wijemanne** — former Sri Lanka champion and Davis Cup coach, professional supervisor.
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-> ⚠️ **Note:** The source code is not publicly available. This repository is a project showcase presenting methodology, results, and visualizations. The core algorithm is proprietary. For academic collaboration or inquiries, feel free to reach out.
 
 ---
 
