@@ -12,7 +12,25 @@
 ![System output showing ball tracking (left) and top-down tactical zone visualization (right)](figures/visualization.png)
 
 ---
+## 📊 Results
 
+| Metric | Value |
+|--------|-------|
+| 3D reconstruction RMS error | 3.97 cm |
+| Bounce detection Precision | 0.895 |
+| Bounce detection Recall | 0.911 |
+| Bounce detection **F1-Score** | **0.903** |
+| Spatial accuracy (court width) | MAE: 3.6 cm |
+| Spatial accuracy (court length) | MAE: 12.7 cm |
+| Overall 2D spatial accuracy | MAE: 13.9 cm |
+
+The F1-Score of **90.3%** outperforms comparable academic systems:
+- Sarıalioğlu et al. (2024) — single stereo camera: 82.39%
+- Yang et al. (2023) — multi-camera robot system: 81.4%
+
+![Spatial comparison between detected bounces (red) and ground truth (green)](figures/spatial_comparison.png)
+
+![Bounce detection along Z-trajectory](figures/bounce_detection_z.png)
 ## 🎯 Motivation
 
 Tactical analysis in tennis requires knowing precisely where the ball bounces on the court. Professional systems like **Hawk-Eye** (8–10 high-speed cameras) or **PlaySight SmartCourt** (6 HD cameras + fixed installation) deliver excellent precision but remain out of reach for most amateur clubs. More affordable solutions like **SwingVision** rely on a single camera, making them vulnerable to occlusions and limited in spatial accuracy.
@@ -71,28 +89,6 @@ The system generates a **side-by-side video** combining the acquisition footage 
 - **3 lateral zones:** Left, Center, Right
 
 Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), synchronized with the video. A per-zone bounce counter is overlaid for both players.
-
----
-
-## 📊 Results
-
-| Metric | Value |
-|--------|-------|
-| 3D reconstruction RMS error | 3.97 cm |
-| Bounce detection Precision | 0.895 |
-| Bounce detection Recall | 0.911 |
-| Bounce detection **F1-Score** | **0.903** |
-| Spatial accuracy (court width) | MAE: 3.6 cm |
-| Spatial accuracy (court length) | MAE: 12.7 cm |
-| Overall 2D spatial accuracy | MAE: 13.9 cm |
-
-The F1-Score of **90.3%** outperforms comparable academic systems:
-- Sarıalioğlu et al. (2024) — single stereo camera: 82.39%
-- Yang et al. (2023) — multi-camera robot system: 81.4%
-
-![Spatial comparison between detected bounces (red) and ground truth (green)](figures/spatial_comparison.png)
-
-![Bounce detection along Z-trajectory](figures/bounce_detection_z.png)
 
 ---
 
