@@ -2,7 +2,7 @@
 
 > Two-camera computer vision system for automatic tennis ball bounce detection and tactical zone visualization — bridging the gap between expensive professional systems (Hawk-Eye, PlaySight) and limited single-camera solutions (SwingVision).
 
----
+--
 
 ## 📽️ Demo
 
