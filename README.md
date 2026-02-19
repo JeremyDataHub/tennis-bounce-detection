@@ -2,16 +2,12 @@
 
 > Two-camera computer vision system for automatic tennis ball bounce detection and tactical zone visualization — bridging the gap between expensive professional systems (Hawk-Eye, PlaySight) and limited single-camera solutions (SwingVision).
 
-
-
 ## 📽️ Demo
 
 <!-- Replace this line with your demo video once uploaded -->
 *Demo video coming soon — side-by-side view of ball tracking and top-down bounce visualization.*
 
 ![System output showing ball tracking (left) and top-down tactical zone visualization (right)](figures/visualization.png)
-
-
 
 ## 📊 Results
 
@@ -33,36 +29,30 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 
 ![Bounce detection along Z-trajectory](figures/bounce_detection_z.png)
 
-
-
 ## 🎯 Motivation
 
 Tactical analysis in tennis requires knowing precisely where the ball bounces on the court. Professional systems like **Hawk-Eye** (8–10 high-speed cameras) or **PlaySight SmartCourt** (6 HD cameras + fixed installation) deliver excellent precision but remain out of reach for most amateur clubs. More affordable solutions like **SwingVision** rely on a single camera, making them vulnerable to occlusions and limited in spatial accuracy.
 
 This project explores whether two synchronized consumer cameras can provide sufficient accuracy for meaningful tactical analysis — making bounce detection and zone visualization accessible to resource-limited training structures.
 
-
-
 ## ⚙️ System Pipeline
 
 ```
 Camera 1 (4K 60fps)  ──┐
                         ├──▶ Synchronization ──▶ Camera Calibration
-Camera 2 (4K 60fps)  ──┘                               │
+Camera 2 (4K 60fps)  ──┘                              │
                                                        ▼
-                                               3D Court Reconstruction
+                                         3D Court Reconstruction
                                                        │
                                                        ▼
-                                             Ball Tracking (GridTrackNet)
+                                    Ball Tracking (GridTrackNet)
                                                        │
                                                        ▼
-                                                Bounce Detection
+                                         Bounce Detection
                                                        │
                                                        ▼
-                                           Tactical Zone Visualization
-                                   (Side-by-side: acquisition + top-down view)
-
-
+                              Tactical Zone Visualization
+                              (Side-by-side: acquisition + top-down view)
 ```
 
 ## 🛠️ Methodology
@@ -94,8 +84,6 @@ The system generates a **side-by-side video** combining the acquisition footage 
 
 Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), synchronized with the video. A per-zone bounce counter is overlaid for both players.
 
----
-
 ## 🔧 Tech Stack
 
 | Category | Tools |
@@ -105,16 +93,12 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 | Ball Tracking | GridTrackNet (Korpelshoek, 2023) |
 | Hardware | DJI Osmo Action 5 Pro × 2, DEITY TC-11 timecode generator |
 
----
-
 ## ⚠️ Limitations
 
 - Evaluated on a single match between two amateur players — generalization to higher ball speeds and competitive play is not yet confirmed
 - Frame rate constraints may occasionally miss very fast bounces
 - Higher spatial error along the court length axis due to camera positioning geometry
 - Cameras may overheat after extended use in tropical conditions
-
----
 
 ## 🔭 Future Work
 
@@ -124,17 +108,13 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 - Automated per-player statistical reports by zone and shot type
 - Validation across different player levels, surfaces, and lighting conditions
 
----
-
 ## 📚 Academic Reference
 
 This system was developed as part of a Master's thesis:
 
-> **Birba, J. (2025).** *Tennis Ball Bounce Detection and Tactical Zone Visualization in Amateur Context.* Master 2 — Digital Sciences and Sport (EUR Digisport), Université Rennes 2 / Synergy Tennis, Colombo, Sri Lanka. Grade: 17/20.
+> **Birba, J. (2025).** *Tennis Ball Bounce Detection and Tactical Zone Visualization in Amateur Context.* Master 2 — Digital Sciences and Sport (EUR Digisport), Université Rennes 2 / Synergy Tennis, Colombo, Sri Lanka. Grade: 17/20 (High Honours).
 >
 > Supervised by Romain Tavenard (Université Rennes 2) and Renouk Wijemanne (Synergy Tennis).
-
----
 
 ## 🙏 Acknowledgements
 
@@ -142,7 +122,8 @@ This system was developed as part of a Master's thesis:
 - **Synergy Tennis**, Colombo, Sri Lanka — for hosting the internship and providing the court and players for data collection.
 - **Renouk Wijemanne** — former Sri Lanka champion and Davis Cup coach, professional supervisor.
 
+## 📄 Rights
 
----
+> ⚠️ **All rights reserved.** This repository is a project showcase presenting methodology, results, and visualizations. No part of this work may be reproduced, distributed, or used without explicit permission from the author. For academic collaboration or inquiries, feel free to reach out.
 
 *Built with 🎾 in Sri Lanka — Jérémy Birba | [LinkedIn](https://linkedin.com/in/birba-jeremy)*
