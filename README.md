@@ -48,19 +48,19 @@ This project explores whether two synchronized consumer cameras can provide suff
 ```
 Camera 1 (4K 60fps)  ──┐
                         ├──▶ Synchronization ──▶ Camera Calibration
-Camera 2 (4K 60fps)  ──┘                              │
+Camera 2 (4K 60fps)  ──┘                               │
                                                        ▼
-                                         3D Court Reconstruction
+                                               3D Court Reconstruction
                                                        │
                                                        ▼
-                                    Ball Tracking (GridTrackNet)
+                                             Ball Tracking (GridTrackNet)
                                                        │
                                                        ▼
-                                         Bounce Detection
+                                                Bounce Detection
                                                        │
                                                        ▼
-                              Tactical Zone Visualization
-                              (Side-by-side: acquisition + top-down view)
+                                           Tactical Zone Visualization
+                                   (Side-by-side: acquisition + top-down view)
 
 
 ```
