@@ -3,12 +3,14 @@
 > Two-camera computer vision system for automatic tennis ball bounce detection and tactical zone visualization — bridging the gap between expensive professional systems (Hawk-Eye, PlaySight) and limited single-camera solutions (SwingVision).
 
 
+
 ## 📽️ Demo
 
 <!-- Replace this line with your demo video once uploaded -->
 *Demo video coming soon — side-by-side view of ball tracking and top-down bounce visualization.*
 
 ![System output showing ball tracking (left) and top-down tactical zone visualization (right)](figures/visualization.png)
+
 
 
 ## 📊 Results
@@ -30,17 +32,19 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 ![Spatial comparison between detected bounces (red) and ground truth (green)](figures/spatial_comparison.png)
 
 ![Bounce detection along Z-trajectory](figures/bounce_detection_z.png)
+
+
+
 ## 🎯 Motivation
 
 Tactical analysis in tennis requires knowing precisely where the ball bounces on the court. Professional systems like **Hawk-Eye** (8–10 high-speed cameras) or **PlaySight SmartCourt** (6 HD cameras + fixed installation) deliver excellent precision but remain out of reach for most amateur clubs. More affordable solutions like **SwingVision** rely on a single camera, making them vulnerable to occlusions and limited in spatial accuracy.
 
 This project explores whether two synchronized consumer cameras can provide sufficient accuracy for meaningful tactical analysis — making bounce detection and zone visualization accessible to resource-limited training structures.
 
----
+
 
 ## ⚙️ System Pipeline
 
-```
 Camera 1 (4K 60fps)  ──┐
                         ├──▶ Synchronization ──▶ Camera Calibration
 Camera 2 (4K 60fps)  ──┘                              │
@@ -56,9 +60,8 @@ Camera 2 (4K 60fps)  ──┘                              │
                                                        ▼
                               Tactical Zone Visualization
                               (Side-by-side: acquisition + top-down view)
-```
 
----
+
 
 ## 🛠️ Methodology
 
