@@ -42,7 +42,7 @@ Camera 1 (4K 60fps)  ──┐
                         ├──▶ Synchronization ──▶ Camera Calibration
 Camera 2 (4K 60fps)  ──┘                                 │
                                                          ▼
-                                                3D Court Reconstruction
+                                               3D Court Reconstruction
                                                          │
                                                          ▼
                                              Ball Tracking (GridTrackNet)
