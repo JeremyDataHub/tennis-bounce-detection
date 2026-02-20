@@ -4,10 +4,10 @@
 
 ## 📽️ Demo
 
-<!-- Replace this line with your demo video once uploaded -->
-*Demo video coming soon — side-by-side view of ball tracking and top-down bounce visualization.*
+<p align="center">
+  <img src="figures/demo.gif" alt="Demo: ball tracking and top-down bounce visualization"/>
+</p>
 
-<img src="figures/visualization.png" width="650" alt="System output showing ball tracking (left) and top-down tactical zone visualization (right)"/>
 
 ## 📊 Results
 
