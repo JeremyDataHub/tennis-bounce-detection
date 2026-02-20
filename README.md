@@ -7,7 +7,7 @@
 <!-- Replace this line with your demo video once uploaded -->
 *Demo video coming soon — side-by-side view of ball tracking and top-down bounce visualization.*
 
-![System output showing ball tracking (left) and top-down tactical zone visualization (right)](figures/visualization.png)
+<img src="figures/visualization.png" width="800" alt="System output showing ball tracking (left) and top-down tactical zone visualization (right)"/>
 
 ## 📊 Results
 
