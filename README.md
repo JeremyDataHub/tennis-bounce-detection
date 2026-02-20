@@ -27,8 +27,8 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 
 <table>
   <tr>
-    <td><img src="figures/spatial_comparison.png" width="450" alt="Spatial comparison"/><br/><em>Detected bounces (red) vs ground truth (green)</em></td>
-    <td><img src="figures/bounce_detection_z.png" width="550" alt="Z-trajectory"/><br/><em>Bounce detection along Z-trajectory</em></td>
+    <td align="center"><img src="figures/spatial_comparison.png" width="450" alt="Spatial comparison"/><br/><em>Detected bounces (red) vs ground truth (green)</em></td>
+    <td align="center"><img src="figures/bounce_detection_z.png" width="600" alt="Z-trajectory"/><br/><em>Bounce detection along Z-trajectory</em></td>
   </tr>
 </table>
 
@@ -63,7 +63,11 @@ Camera 2 (4K 60fps)  ──┘                                 │
 ### Camera Setup
 Two **DJI Osmo Action 5 Pro** cameras were configured at 4K resolution (3840×2160px) and 60 fps, positioned behind each baseline on opposite ends of the court. Temporal synchronization was achieved using a **DEITY TC-11** timecode generator.
 
-<img src="figures/camera_setup.png" width="350" alt="Camera positioning and court reference points"/>
+<p align="center">
+  <img src="figures/camera_setup.png" width="350" alt="Camera setup"/>
+  <br/>
+  <em>Camera positioning and 12 extrinsic calibration reference points</em>
+</p>
 
 ### Camera Calibration
 **Intrinsic calibration** determined each camera's internal parameters using a checkerboard pattern filmed from multiple angles, implemented via OpenCV.
