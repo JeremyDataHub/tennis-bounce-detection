@@ -90,7 +90,7 @@ The system generates a **side-by-side video** combining the acquisition footage 
 
 Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), synchronized with the video. A per-zone bounce counter is overlaid for both players.
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | Category | Tools |
 |----------|-------|
