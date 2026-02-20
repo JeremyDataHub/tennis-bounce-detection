@@ -7,7 +7,7 @@
 <!-- Replace this line with your demo video once uploaded -->
 *Demo video coming soon — side-by-side view of ball tracking and top-down bounce visualization.*
 
-<img src="figures/visualization.png" width="550" alt="System output showing ball tracking (left) and top-down tactical zone visualization (right)"/>
+<img src="figures/visualization.png" width="650" alt="System output showing ball tracking (left) and top-down tactical zone visualization (right)"/>
 
 ## 📊 Results
 
@@ -60,7 +60,7 @@ Camera 2 (4K 60fps)  ──┘                                 │
 ### Camera Setup
 Two **DJI Osmo Action 5 Pro** cameras were configured at 4K resolution (3840×2160px) and 60 fps, positioned behind each baseline on opposite ends of the court. Temporal synchronization was achieved using a **DEITY TC-11** timecode generator.
 
-<img src="figures/camera_setup.png" width="550" alt="Camera positioning and court reference points"/>
+<img src="figures/camera_setup.png" width="350" alt="Camera positioning and court reference points"/>
 
 ### Camera Calibration
 **Intrinsic calibration** determined each camera's internal parameters using a checkerboard pattern filmed from multiple angles, implemented via OpenCV.
