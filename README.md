@@ -37,7 +37,7 @@ Tactical analysis in tennis requires knowing precisely where the ball bounces on
 
 This project explores whether two synchronized consumer cameras can provide sufficient accuracy for meaningful tactical analysis — making bounce detection and zone visualization accessible to resource-limited training structures.
 
-## ⚙️ System Pipeline
+## System Pipeline
 
 ```
 Camera 1 (4K 60fps)  ──┐
