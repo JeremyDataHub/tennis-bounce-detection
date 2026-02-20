@@ -27,8 +27,8 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 
 <table>
   <tr>
-    <td><img src="figures/spatial_comparison.png" width="380" alt="Spatial comparison"/><br/><em>Detected bounces (red) vs ground truth (green)</em></td>
-    <td><img src="figures/bounce_detection_z.png" width="380" alt="Z-trajectory"/><br/><em>Bounce detection along Z-trajectory</em></td>
+    <td><img src="figures/spatial_comparison.png" width="450" alt="Spatial comparison"/><br/><em>Detected bounces (red) vs ground truth (green)</em></td>
+    <td><img src="figures/bounce_detection_z.png" width="550" alt="Z-trajectory"/><br/><em>Bounce detection along Z-trajectory</em></td>
   </tr>
 </table>
 
