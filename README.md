@@ -8,7 +8,7 @@
 </p>
 
 
-## 📊 Results
+## Results
 
 | Metric | Value |
 |--------|-------|
@@ -31,7 +31,7 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
   </tr>
 </table>
 
-## 🎯 Motivation
+## Motivation
 
 Tactical analysis in tennis requires knowing precisely where the ball bounces on the court. Professional systems like **Hawk-Eye** (8–10 high-speed cameras) or **PlaySight SmartCourt** (6 HD cameras + fixed installation) deliver excellent precision but remain out of reach for most amateur clubs. More affordable solutions like **SwingVision** rely on a single camera, making them vulnerable to occlusions and limited in spatial accuracy.
 
@@ -57,7 +57,7 @@ Camera 2 (4K 60fps)  ──┘                                 │
                                     (Side-by-side: acquisition + top-down view)
 ```
 
-## 🛠️ Methodology
+## Methodology
 
 ### Camera Setup
 Two **DJI Osmo Action 5 Pro** cameras were configured at 4K resolution (3840×2160px) and 60 fps, positioned behind each baseline on opposite ends of the court. Temporal synchronization was achieved using a **DEITY TC-11** timecode generator.
@@ -99,14 +99,14 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 | Ball Tracking | GridTrackNet (Korpelshoek, 2023) |
 | Hardware | DJI Osmo Action 5 Pro × 2, DEITY TC-11 timecode generator |
 
-## ⚠️ Limitations
+## Limitations
 
 - Evaluated on a single match between two amateur players — generalization to higher ball speeds and competitive play is not yet confirmed
 - Frame rate constraints may occasionally miss very fast bounces
 - Higher spatial error along the court length axis due to camera positioning geometry
 - Cameras may overheat after extended use in tropical conditions
 
-## 🔭 Future Work
+## Future Work
 
 - Net fault detection
 - Stroke detection and ball speed estimation
@@ -114,7 +114,7 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 - Automated per-player statistical reports by zone and shot type
 - Validation across different player levels, surfaces, and lighting conditions
 
-## 📚 Academic Reference
+## Academic Reference
 
 This system was developed as part of a Master's thesis:
 
@@ -122,13 +122,13 @@ This system was developed as part of a Master's thesis:
 >
 > Supervised by Romain Tavenard (Université Rennes 2) and Renouk Wijemanne (Synergy Tennis).
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **[GridTrackNet](https://github.com/VKorpelshoek/GridTrackNet)** — Real-time tennis ball tracking CNN by V. Korpelshoek (Delft University of Technology, 2023). Used for 2D ball coordinate extraction.
 - **Synergy Tennis**, Colombo, Sri Lanka — for hosting the internship and providing the court and players for data collection.
 - **Renouk Wijemanne** — former Sri Lanka champion and Davis Cup coach, professional supervisor.
 
-## 📄 Rights
+## Rights
 
 > ⚠️ **All rights reserved.** This repository is a project showcase presenting methodology, results, and visualizations. No part of this work may be reproduced, distributed, or used without explicit permission from the author. For academic collaboration or inquiries, feel free to reach out.
 
