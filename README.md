@@ -25,9 +25,9 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 - Sarıalioğlu et al. (2024) — single stereo camera: 82.39%
 - Yang et al. (2023) — multi-camera robot system: 81.4%
 
-![Spatial comparison between detected bounces (red) and ground truth (green)](figures/spatial_comparison.png)
+!<img src="figures/spatial_comparison.png" width="550" alt="Spatial comparison between detected bounces (red) and ground truth (green)"/>
 
-![Bounce detection along Z-trajectory](figures/bounce_detection_z.png)
+<img src="figures/bounce_detection_z.png" width="700" alt="Bounce detection along Z-trajectory"/>
 
 ## 🎯 Motivation
 
@@ -60,7 +60,7 @@ Camera 2 (4K 60fps)  ──┘                                 │
 ### Camera Setup
 Two **DJI Osmo Action 5 Pro** cameras were configured at 4K resolution (3840×2160px) and 60 fps, positioned behind each baseline on opposite ends of the court. Temporal synchronization was achieved using a **DEITY TC-11** timecode generator.
 
-![Camera positioning and court reference points](figures/camera_setup.png)
+<img src="figures/camera_setup.png" width="600" alt="Camera positioning and court reference points"/>
 
 ### Camera Calibration
 **Intrinsic calibration** determined each camera's internal parameters using a checkerboard pattern filmed from multiple angles, implemented via OpenCV.
