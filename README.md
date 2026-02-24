@@ -1,6 +1,6 @@
 # Tennis Ball Bounce Detection & Tactical Zone Visualization
 
-> Two-camera computer vision system for automatic tennis ball bounce detection and tactical zone visualization — bridging the gap between expensive professional systems (Hawk-Eye, PlaySight) and limited single-camera solutions (SwingVision).
+> Two-camera computer vision system for automatic tennis ball bounce detection and tactical zone visualization. Bridging the gap between expensive professional systems (Hawk-Eye, PlaySight) and limited single-camera solutions (SwingVision).
 
 
 <p align="center">
@@ -21,8 +21,8 @@
 | Overall 2D spatial accuracy | MAE: 13.9 cm |
 
 The F1-Score of **90.3%** outperforms comparable academic systems:
-- Sarıalioğlu et al. (2024) — single stereo camera: 82.39%
-- Yang et al. (2023) — multi-camera robot system: 81.4%
+- Sarıalioğlu et al. (2024) with a single stereo camera: 82.39%
+- Yang et al. (2023) with a multi-camera robot system: 81.4%
 
 <table>
   <tr>
@@ -35,7 +35,7 @@ The F1-Score of **90.3%** outperforms comparable academic systems:
 
 Tactical analysis in tennis requires knowing precisely where the ball bounces on the court. Professional systems like **Hawk-Eye** (8–10 high-speed cameras) or **PlaySight SmartCourt** (6 HD cameras + fixed installation) deliver excellent precision but remain out of reach for most amateur clubs. More affordable solutions like **SwingVision** rely on a single camera, making them vulnerable to occlusions and limited in spatial accuracy.
 
-This project explores whether two synchronized consumer cameras can provide sufficient accuracy for meaningful tactical analysis — making bounce detection and zone visualization accessible to resource-limited training structures.
+This project explores whether two synchronized consumer cameras can provide sufficient accuracy for meaningful tactical analysis, making bounce detection and zone visualization accessible to resource-limited training structures.
 
 ## System Pipeline
 
@@ -101,7 +101,7 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 
 ## Limitations
 
-- Evaluated on a single match between two amateur players — generalization to higher ball speeds and competitive play is not yet confirmed
+- Evaluated on a single match between two amateur players. Generalization to higher ball speeds and competitive play is not yet confirmed
 - Frame rate constraints may occasionally miss very fast bounces
 - Higher spatial error along the court length axis due to camera positioning geometry
 - Cameras may overheat after extended use in tropical conditions
@@ -118,15 +118,15 @@ Bounces are displayed as **yellow dots** (in-bounds) or **red dots** (faults), s
 
 This system was developed as part of a Master's thesis:
 
-> **Birba, J. (2025).** *Tennis Ball Bounce Detection and Tactical Zone Visualization in Amateur Context.* Master 2 — Digital Sciences and Sport (EUR Digisport), Université Rennes 2 / Synergy Tennis, Colombo, Sri Lanka. Grade: 17/20 (High Honours).
+> **Birba, J. (2025).** *Tennis Ball Bounce Detection and Tactical Zone Visualization in Amateur Context.* Master 2 in Digital Sciences and Sport (EUR Digisport), Université Rennes 2 / Synergy Tennis, Colombo, Sri Lanka. Grade: 17/20 (High Honours).
 >
 > Supervised by Romain Tavenard (Université Rennes 2) and Renouk Wijemanne (Synergy Tennis).
 
 ## Acknowledgements
 
-- **[GridTrackNet](https://github.com/VKorpelshoek/GridTrackNet)** — Real-time tennis ball tracking CNN by V. Korpelshoek (Delft University of Technology, 2023). Used for 2D ball coordinate extraction.
-- **Synergy Tennis**, Colombo, Sri Lanka — for hosting the internship and providing the court and players for data collection.
-- **Renouk Wijemanne** — former Sri Lanka champion and Davis Cup coach, professional supervisor.
+- **[GridTrackNet](https://github.com/VKorpelshoek/GridTrackNet)** ; Real-time tennis ball tracking CNN by V. Korpelshoek (Delft University of Technology, 2023). Used for 2D ball coordinate extraction.
+- **Synergy Tennis**, Colombo, Sri Lanka; for hosting the internship and providing the court and players for data collection.
+- **Renouk Wijemanne**; former Sri Lanka champion and Davis Cup coach, professional supervisor.
 
 ## Rights
 
