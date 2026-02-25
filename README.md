@@ -125,9 +125,9 @@ This system was developed as part of a Master's thesis:
 
 ## Acknowledgements
 
-- **[GridTrackNet](https://github.com/VKorpelshoek/GridTrackNet)** ; Real-time tennis ball tracking CNN by V. Korpelshoek (Delft University of Technology, 2023). Used for 2D ball coordinate extraction.
+- **[GridTrackNet](https://github.com/VKorpelshoek/GridTrackNet)** , Real-time tennis ball tracking CNN by V. Korpelshoek (Delft University of Technology, 2023). Used for 2D ball coordinate extraction.
 - **Synergy Tennis**, Colombo, Sri Lanka; for hosting the internship and providing the court and players for data collection.
-- **Renouk Wijemanne**; former Sri Lanka champion and Davis Cup coach, professional supervisor.
+- **Renouk Wijemanne**, former Sri Lanka champion and Davis Cup coach, professional supervisor.
 
 ## Rights
 
