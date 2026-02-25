@@ -132,4 +132,4 @@ This system was developed as part of a Master's thesis:
 
 > ⚠️ **All rights reserved.** This repository is a project showcase presenting methodology, results, and visualizations. No part of this work may be reproduced, distributed, or used without explicit permission from the author. For academic collaboration or inquiries, feel free to reach out.
 
-*🎾 Built by Jérémy Birba | [LinkedIn](https://linkedin.com/in/birba-jeremy)*
+*🎾 Built by Jérémy Birba | [LinkedIn](https://linkedin.com/in/birba-jeremy)* | *[GitHub](https://github.com/JeremyDataHub)*
