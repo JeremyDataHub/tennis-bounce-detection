@@ -7,6 +7,7 @@
   <img src="figures/demo.gif" alt="Demo: ball tracking and top-down bounce visualization"/>
 </p>
 
+**Full implementation code is not publicly available** as this work is being considered for potential commercialization through. However, the thorough methodology and transparent results presented here demonstrate the technical rigor and reproducibility of the approach.
 
 ## Results
 
